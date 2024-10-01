@@ -1,0 +1,520 @@
+/*Estilo do menu de navegação*/
+nav{
+    background-color: burlywood; /*Cor de fundo do menu*/
+    padding: 20px 0; /*Esoaçamento interno*/
+ }
+
+ nav ul{
+    list-style: none; /*Remove as bolinhas padrõ da lista*/
+    margin: 0;
+    padding: 0;
+    display: flex; /*Faz com que os itens fiquem lado a lado(horizontal)*/
+    justify-content: center; /*Centraliza os itens horizontalmente*/
+ }
+
+ nav ul li{
+    margin: 0 15px; /*Espaçamento entre os itens do menu*/
+ }
+
+ nav ul li a{
+    color: white; /*Cor do texto dos links*/
+    text-decoration: none; /*Remove o sublinhado dos links*/
+    font-size: 18px; /*Tamanho da fonte*/
+    transition: color 0.3s; /*Transição suave para a mudança de cor*/
+ }
+
+ nav ul li a:hover{
+    color: black; /*Cor do texto ao passar o mouse(hover)*/
+ }
+
+ .Contatos{
+    padding: 10px 0;
+    text-align: center;
+ }
+
+ h1{
+    text-align: center;
+    font-size: 150%;
+ }
+ 
+ h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+ }
+
+ body{
+    background-color: antiquewhite;
+ }
+
+ /* Estilo do menu de navegação */
+nav {
+    background-color: rgba(136, 90, 53, 0.881);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #df4060;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #333;
+    box-shadow: 0px 8px 16px 0px rgb(222, 111, 115);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+/* Estilo geral do footer */ 
+footer {
+    background-color: rgba(136, 90, 53, 0.881); 
+    color: white; 
+    padding: 40px 0; 
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+.footer-section { 
+    flex-basis: 23%; /* Faz com que as seções ocupem 23% da largura, com espaço para margens */
+    margin-bottom: 20px;
+}
+.footer-section h4 { 
+    margin-bottom: 15px; 
+    font-size: 18px; 
+    color: rgb(255, 164, 167);
+}
+.footer-section p, .footer-section ul {
+    margin: 0 ; 
+    padding: 0; 
+    line-height: 1.6;
+}
+.footer-section ul {
+    list-style-type: none;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+.social-links a { 
+    display: inline-block; 
+    margin-right: 10px; 
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #ff6347;
+}
+.footer-bottom { 
+    text-align: center; 
+    margin-top: 20px; 
+    padding: 10px 0; 
+    border-top: 1px solid #444; 
+    font-size: 14px;
+}
+.footer-bottom p {
+    margin: 0;
+}
+
+.slider {
+    width: 100%; 
+    max-width: 650px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: static; /
+}
+
+.slides {
+    display: flex; 
+    width: 100%; 
+    animation: slideAnimation 9s infinite; 
+}
+
+.slide {
+    width: 100%; 
+    flex-shrink: 0; 
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); } 
+    33% { transform: translateX(-100%); } 
+    66% { transform: translateX(-200%); } 
+    100% { transform: translateX(0); } 
+}
+
+
+.slide img {
+    width: 100%; 
+    display: block; 
+}
+
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 30px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    width: 1150px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card{
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    border: 1px solid #090101d3;
+    border-radius: 15px; /* Arredonda os cantos dos cards */
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card .img{
+    transition: 0.5s;
+}
+
+.container .card .content{
+    padding: 10px;
+    text-align: center;
+}
+
+.container .card .content p{
+    color: #ff6347;
+    transition: 0.5s;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .card:hover{
+    background-color:#575757;
+    color: antiquewhite;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px rgb(113, 57, 36);
+}
+
+.container .card:hover p{
+    color: white;
+}
+
+.container .card:hover h1{
+    color: white;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #090101d3;
+    border-radius: 15px; /* Arredonda os cantos dos cards */
+    padding: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.429); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 5; /* Permite que os cards cresçam igualmente */
+    max-width: 200px; /* Define uma largura máxima para os cards */
+}
+
+/* Estilo para o título dos cards */
+.card h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Estilo para o parágrafo dos cards */
+.card p {
+    color: #292929d0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Aplica margens e padding zerados para todos os elementos e define o box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estiliza a seção do produto */
+.produto {
+    display: flex; /* Usa o flexbox para organizar o layout */
+    justify-content: space-around; /* Distribui o espaço entre os elementos */
+    background-color: rgba(136, 90, 53, 0.881)/* Cor de fundo branco */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do elemento */
+}
+
+/* Estiliza a div que contém as imagens do produto */
+.imagens-produto {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+}
+
+/* Estiliza a imagem principal do produto */
+.imagem-principal {
+    width: 100%; /* A imagem ocupa 100% da largura da div */
+    max-width: 400px; /* Define um tamanho máximo para a imagem */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estiliza as miniaturas das imagens */
+.miniaturas img {
+    width: 70px; /* Largura fixa das miniaturas */
+    margin-right: 10px; /* Espaçamento entre as miniaturas */
+    cursor: pointer; /* O cursor muda para pointer ao passar sobre as miniaturas */
+}
+
+/* Estiliza a div que contém os detalhes do produto */
+.detalhes-produto {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+}
+
+/* Estiliza a descrição do produto */
+.descricao {
+    color: #424242; /* Cor mais clara para a descrição */
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estiliza o preço do produto */
+.preco {
+    color: #e74c3c; /* Cor vermelha para o preço */
+    font-size: 24px; /* Tamanho maior para destacar */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estiliza o formulário de opções de compra */
+.opcoes-compra {
+    display: flex; /* Organiza em colunas usando flexbox */
+    flex-direction: column; /* As opções ficam uma abaixo da outra */
+}
+
+/* Estiliza os rótulos (labels) dos selects */
+label {
+    margin-bottom: 5px; /* Espaçamento inferior */
+    font-weight: bold; /* Negrito para o texto */
+}
+
+/* Estiliza os campos de seleção (selects) */
+select {
+    padding: 8px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ddd; /* Borda cinza clara */
+}
+
+/* Estiliza o botão de compra */
+button {
+    padding: 10px; /* Espaçamento interno */
+    background-color: #27ae60; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estiliza o botão ao passar o mouse (hover) */
+button:hover {
+    background-color: #2ecc71; /* Cor verde mais clara */
+}
+
+/* Estiliza a seção de comentários */
+.comentarios {
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estiliza cada comentário */
+.comentario {
+    display: flex; /* Exibe a foto e o texto lado a lado */
+    align-items: center; /* Alinha a foto e o texto verticalmente */
+    background-color: rgb(173, 129, 112); /* Fundo branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do comentário */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+/* Estiliza a foto do usuário */
+.foto-usuario {
+    width: 55px; /* Largura da foto */
+    height: 55px; /* Altura da foto */
+    border-radius: 50%; /* Deixa a imagem redonda */
+    margin-right: 15px; /* Espaçamento à direita da foto */
+}
+/* Estiliza o texto dos comentários */
+.comentario p {
+    color: #ffffff
+}
+
+.Sobre{
+    display: flex; /* Exibe a foto e o texto lado a lado */
+    align-items: center; /* Alinha a foto e o texto verticalmente */
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(222, 111, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  /* facebook*/
+  .containerFive:hover {
+      background-color: #0072b1;
+      transition-duration: .3s;
+    }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+    button {
+        padding: 1.0em 3em;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: antiquewhite;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      button:hover {
+        background-color: rgb(222, 111, 115);
+        box-shadow: 0px 15px 20px rgb(255, 164, 167);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+      
+      button:active {
+        transform: translateY(-1px);
+      }
+    
+    .cards{
+        background-color: rgb(226, 214, 196);
+        border: 1px solid #090101d3;
+        border-radius: 15px; /* Arredonda os cantos dos cards */
+        padding: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.429); /* Adiciona uma sombra para dar um efeito de elevação */
+        flex: 10; /* Permite que os cards cresçam igualmente */
+        max-width: 400px; /* Define uma largura máxima para os cards */
+    }
+    
